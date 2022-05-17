@@ -32,7 +32,7 @@ var formSubmitHandler = function(event) {
 };
 
 var getCoords = function(city) {
-    var coordApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + APIKey;
+    var coordApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + APIKey;
     fetch(coordApi)
         .then(function (response) {
             return response.json();
